@@ -1,0 +1,18 @@
+```{python}
+#| label: tbl-molecules
+#| tbl-cap: OLED host, dopant, and charge generation molecules
+
+from IPython.display import Markdown
+from tabulate import tabulate
+table = ["Alq3",$C_{27}H_{18}AlN_3O_3$" "$459.43$ ,-5.7[-2.9],"Electron transport and host",[@RN37; @RN38]]
+         ["TPBi",$C_{45}H_{30}N_6$ 654.76 ,-6.2[-2.7],"Electron transport and exciton blocking",[@RN38]],
+         ["NPB",$C_{44}H_{32}N_2$" "588.74,-5.4[-2.3],"Hole Transport",[@RN38; @RN39]],
+         ["DPA", $C_{26}H_{18}$" "330.42, "Fluorescent and Host",[@RN39]]
+         ["TMPYPB",$C_{39}H_{27}N_3$" "537.65,-6.7[-2.7],"Electron transport and exciton blocking",[@RN38; @RN39]]
+         ["mCBP",$C_{36}H_{24}N_{2}$" "484.6,-5.6[-2.1],Host,[@RN40]]
+         ["TAPC",$C_{46}H_{46}N_2$" " 626.37,-5.5[-2.0],"Hole transport",[@RN38]]
+Markdown(tabulate(
+  table, 
+  headers=["FOrmula and Molecular Weight (AMU)","HOMO[LUMO]", "Application","Reference"]
+))
+```

@@ -1,0 +1,58 @@
+# Conclusion
+
+Despite advertising this paper is on the path to electrically pumped
+lasers, this thesis had its reticle focused on achieving triplet-triplet
+annihilation upconversion in 2,6-DPA to dope it into typical fluorescent
+lasing material, Coumarin6, to surpass its theoretical external quantum
+efficiency maximum. While this thesis was not able to achieve an
+increased performance on either device -- neat film 2,6-DPA or doped
+2,6-DPA/Coumarin6 (1wt%) -- the devices showed promise in exhibiting TTU
+properties. It was confirmed in four different ways: displaying EQE roll
+up at low current densities; demonstrating two distinct regimes in a J-L
+log-log plot separated by a critical triplet density; transient steady
+state electroluminescence progressively increasing over time at low
+current densities; and transient electroluminescence delayed
+fluorescence displaying the characteristic TTU curve. While these were
+confirmed, to truly feel confident about TTU in these devices, the peak
+EQE must surpass the theoretical maximum. This will be the next step.
+
+The conclusions made from this work demonstrates the need to continue
+down this path toward electrically pumped organic lasers. The future
+work possible thanks to this thesis will be explained here.
+
+## Outlook
+
+### Optimization
+
+The device in this thesis struggled to perform with high EQE. Particular
+attention to optimisation of thermal evaporation needs to be considered,
+to make the host-guest system of 2,6-DPA and Coumarin at $1-2wt\%$
+comfortably achievable. Different device thickness could further
+optimise injection and recombination of polarons. Further experiments to
+optimize the results also need to be completed. Transient
+electroluminescence of variant pulse widths to analyse the dynamics -- a
+process that is a step towards simulating rate equations.
+
+### Simulate rate equations
+
+Rate equations of STA and TTA need to be calculated from the singlet and
+triplet population rate equations, such that the transient EL can be
+analysed and understood. For example, this thesis only qualitatively
+analyses the dominant STA and TTA process at low or high current
+density. Simulation would provide rates that could be used to calculate
+the necessary threshold current density for lasing. TTA becomes
+important at high current density because of it is proportional to the
+triplet population, $n_T^2$, and STA is proportional to $n_{T1}n_{S1}$.
+Such a way to reduce STA, while keeping TTU high, is to minimize the
+spectral overlap between the singlet and triplet absorption spectrum.
+
+### ASE measurements
+
+The first step in really testing lasing is via amplified spontaneous
+emission (ASE). If the device experiences light amplification using a
+TTU assisted emitter, it shows promise that lasing can be achieved. This
+is because the ASE threshold can be converted into a singlet exciton
+density threshold that can be used to calculated the current density
+threshold. This can only be done with the rate equations of SSA, STA,
+and TTA. However ASE measurements should be attacked only once higher
+EQEs are reached.

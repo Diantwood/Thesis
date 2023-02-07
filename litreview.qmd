@@ -1,0 +1,286 @@
+# Literature Review
+
+There has been a lot of commotion surrounding whether or not certain
+papers have achieved coherent emission from electrically pumped organic
+semiconductors. The papers claiming to have achieved lasing will be
+introduced and evaluated in @sec-laser. To tie
+this review into the experiments in this thesis, the current
+triplet-triplet annihilation (TTA) upconversion literature will be
+reviewed and evaluated. Collectively, this literature review will
+compare alternative materials as options to achieve lasing and argue for
+the present investigation: achieving electrically pumped lasing via TTA
+upconversion.
+
+## Prospects of Electrically Pumping {#sec-laser}
+
+Although countless papers have published results confirming realisation
+of lasing emission from electrical excitation, only a few have been
+convincing, even fewer have achieved lasing, and none have achieved
+stable emission. One paper claimed lasing in tetracene single crystals
+[@RN56], but was subsequently retracted as part of the Schön scandal.
+Another paper [@RN57] reported a 410 nm emission from $Alq_3$ blended
+with Nile Blue, but neither of those materials emit at the reported
+wavelength. It is believed to be an emission from the indium that has an
+atomic line at 410 nm [@RN1]. Also curiously, is the alleged lasing
+voltage of 0.27 V with a threshold current of 0.088 mA in a millimeter
+dimension device.
+
+### Progress
+
+Laser emission from a pulsed DCJTI dye doped material was reported
+[@RN60] sandwiched between dielectric mirrors. They report, at a current
+density of $860\ mA \ cm^{-2}$, narrowing of the emission linewidth (2.6
+nm to 2.0 nm), change in beam divergence (53 mrad to 13 mrad), and claim
+the threshold for optical pumping is the same for electrical pumping.
+However, a paper by Samuel *et al.* [@RN61] reviews the article and
+calls it \"puzzling\". The narrowing is far too small compared to the
+10-50 factor reduction seen in microcavity OSLs. The threshold is five
+orders of magnitude smaller than equivalent structures. Duarte *et al.*
+has strong words against this paper too [@RN3].
+
+Similarly, a paper by Lin *et al.* [@RN59] reports a threshold of
+$~2\ mA \ cm^{-2}$, which is considerably lower than any predicted
+threshold from many publications. Baldo *et al.* [@RN20] suggests a
+threshold of greater than $5\ A \ cm^{-2}$, while Kozlov *et al.*
+[@RN62] calculated, for a Fabry-Perot laser with a DCM-doped $Alq_3$
+emissive layer at 5ns pulsed excitation, a threshold current density of
+$200\ A\ cm^{-2}$. $200\ A\ cm^{-2}$ would be too high for continuous
+operation but works in the pulse regime [@RN1]. A distributed feedback
+structure works better than a Fabry-Perot resonator, where it can reduce
+the threshold to an estimated $80\ A cm^{-2}$ [@RN63].
+
+Spatially coherent light was reported in a tandem OLED structure under a
+pulse domain using Coumarin 545 T [@RN58]. The structure was too weak to
+achieve laser behaviour ($800 mA\ cm^{-2}$), yet shows good prospects.
+Another paper, Cai *et al.* [@RN64], reported lasing action; however
+similarly to previous attempts has a low threshold ($0.8 mA  cm^{-2}$
+and line width of 0.5 nm.
+
+A recurring theme is the failure to recognise lasing. Samuel *et al.*
+points out four key properties of light amplification by stimulated
+emission or radiation in a resonator. The first is narrow linewidth
+emission. Second is the light output comprises a beam. Third is there
+will be a clear threshold (change in slope) of output power and
+linewidth. Finally, the fourth is the emission will resemble the output
+expected of the specific gain medium and resonator.
+
+### Success at last
+
+In 2019 Sandanayaka *et al.* [@RN15] reported blue lasing from an
+electrical excitation of a conventional OLED that incorporated a
+mix-order distributed feedback $SiO_2$ grating. OLEDs, with high
+efficiency and EL emission efficiency, tend to only notably increase EQE
+up to current densities of $1\ A \ cm^{-2}$. However, these current
+densities are not close to the injection of $1 \ kA \ cm^{-2}$ that is
+needed for lasing [@RN9]. This was their reason to use a single-layer
+structure containing no heterointerface, such that excitons generated
+and deactivated in the emitting layer. The mobility of the lasing
+material used, BSB-Cz, for both electrons and holes was
+$10^{-4}cm^2/Vs$. Sandanayaka *et al.* celebrated a constant EQE up to
+$~1\ kA \ cm^{-2}$ without drastic roll-off. As well as the polaron
+absorption overlap of 600 to 1000 nm, which avoids overlap of the
+emission spectrum of the blue (460 nm) BSB-Cz. The lasing threshold was
+about $700\ A\ cm^{-2}$ with a spectral width of 0.2 nm. The issue with
+this laser is that it displayed very short device lifetime.
+
+### Issues
+
+Electrically pumped lasers suffer from a whole slew of complex problems
+[@RN98; @RN20; @RN69]. Forget and Chénais [@RN9] ignore the losses and
+assume a lower limit for calculating the current density threshold:
+$$J_{threshold} = \frac{n_s^{threshold}e}{\phi_{spin} \phi_F\tau_{rad}}$$
+where $n_{threshold}$ is the surface density of singlet excitons, e is
+the elementary charge, $\phi_{spin}$ is the exciton recombination rate
+to generate singlets (fluorescence has $\phi_{spin}=0.25$), $\phi_F$ is
+the PLQY, and $\tau_{rad}$ is the lifetime of radiative decay. They
+assume values of $\tau_{rad}~1ns$, and $\phi_F~1$ to obtain the
+threshold $$J_{threshold} ~ 1 kA/cm^2$$ For triplet-triplet annihilation
+upconversion, some materials have an upper $\phi_{spin}$ limit of
+$0.65$. This brings the new threshold for TTU to
+$$J_{TTA} ~ 0.5 kA/cm^2$$ Unfortunately this is only a lower limit.
+Losses will inevitably seep their way in, increasing the practical
+limit. This thesis focuses on decreasing the emissive layer losses, but
+a brief overview of structural losses will be included as well. The
+first issue is the problematic electrical contacts that cause problems
+with optical confinement. The metallic electrodes absorb the guided
+mode, an absorption that is enhanced by the similar refractive indices
+of organic molecules. This loss further reduces the light out. Some
+methods have been used to reduce the overlap between the optical mode
+and the electrode [@RN99; @RN100; @RN101; @RN102]. There are bountiful
+polarons present at high current densities. Unfortunately they have a
+broad absorption band, meaning they overlap with the emission spectra
+and can quench the emission [@RN20]. Both electrical contact issues and
+polaron absorption can be resolved with higher mobility. Organic
+light-emitting field-effect transistors (OLEFETs) show potential to fix
+these problems simultaneously [@RN103], but OLEFETs are outside the
+scope of this thesis.
+
+The loss that this thesis focus on is the triplet exciton issue -- by
+far the most difficult to overcome. Not only does electrical pumping
+directly generate triplets, but triplets have much longer lifetimes
+(~$ms$ [@RN104]), causing pile-up in long-pulse or high repetition-rate
+regime [@RN4]. Even under the more favourable short pulse regime
+[@RN105], triplets still cause issues such as absorbing laser photons
+(triplet absorption), or quench singlets (singlet-triplet annihilation)
+[@RN69]. Giebink *et al.* [@RN69] showed that STA was the dominant
+mechanism, and TA. Lehnhaardt *et al.* [@RN72] showed STA and TA induce
+losses in guest/host systems.
+
+### Design rules for organic laser diodes
+
+To summarise the losses, this section aims to elaborate on the design
+rules that must be kept in mind when trying to realise OSLs.
+
+#### Balanced carrier mobilities
+
+At high excitation, high charge carrier mobility is vital to reduce the
+losses, such as bimolecular annihilations, induced absorption losses,and
+field-induced exciton dissociation [@RN81]. One simulation predicted
+carrier mobilities of at least $5\times10^{-2}cm^2/Vs$ to achieve a
+lasing input of $10kA/cm^2$ [@RN81]. Furthermore, the mobilities of both
+electrons and holes need to be balanced. If not, exciton recombination
+will not happen in the emissive layer because the lower mobility charge
+will only be injected a few nanometers into the emissive layer [@RN81].
+Hence, thicker emissive layers will reduce bimolecular annihilation
+processes.
+
+#### Guest-Host
+
+Gust-host systems enable low self-absorption because of the separate
+emission/absorption energies. Host-guest systems will also reduce
+field-induced exciton dissociation, while maintaining a high singlet
+exciton density [@RN81].
+
+#### Pulse operation
+
+Joule heating degrades the emissive layer, a process that DC operation
+amplifies. Pulse measurements not only will reduce this heating, but it
+also enables triplets to decay before triplet absorption dominates.
+
+### Triplet Dynamics
+
+If we are to ever realise electrically pumped lasers, triplets and their
+usually not luminescent property, must be managed. Harvesting emission
+from triplets via phosphorescence [@RN22] was a promising turning point
+for OLEDs because it increased the internal quantum efficiency (IQE)
+from $25\%$ to an achievable $100\%$. Triplet dynamics have been
+understood to be a great obstacle in organic lasing
+[@RN74; @RN72; @RN73], especially electrically pumped
+[@RN20; @RN67; @RN68]. Some ways around managing triplets are by adding
+\" triplet scavengers\" [@RN71] or \"triplet managers\" [@RN73], or a
+way that managed to remove triplets with \"plasmonic sinks\" [@RN70].
+
+The triplet state $T_1$ is the lowest energy of some $T_n$ number of
+triplet states. Triplets $T_1$ usually decay to the ground state but can
+undergo a photon absorption and be excited to a higher energy triplet
+state via a process called triplet absorption (TA). $80\%$ of the time
+this excited state relaxes back to the $T_1$ rapidly (300 fs timescale),
+but the remaining percent dissociate into charges [@RN78]. We can start
+seeing that the the long-lived triplet population from instant
+generation of triplets and ISC triplets dominate the exciton population
+in electrically injected systems. Hence, managing these usually
+non-emissive triplets is essential. This is where we utilise the fact
+that a chromophore in a solid-state material always has neighbours.
+TTU-based OLEDs show IQEs of up to $62.5\%$ [@RN27; @RN28], which is not
+the $100\%$ phosphorescent or TADF molecules.
+
+#### Why not phosphorescence? {#sub:phos}
+
+Phosphorescence on a casual glance might seem very enticing for
+electrically pumped lasers due to the triplet problem. You might ask
+yourself: If phosphorescence is able to emit light via the triplet state
+$T_1$ and the singlet state $S_0$, then under electrical excitation we
+can utilise the favoured triplets to obtain an $100\%$ internal quantum
+efficiency (IQE)? Well we can first consider each colour. Red emitters
+would have to compete with nonradiative decay because of the energy-gap
+law. Blue emitters suffer from being unstable due to the higher energy
+of the singlet state lying in the UV range. To now cut green from the
+equation, the additional losses must be considered.
+
+For a laser, triplet absorption must be avoided. From the Köhler and
+Bässler rule of thumb [@RN75], the stimulated emission
+$T_1 \rightarrow S_1$ directly competes with $T_1 \rightarrow T_n$
+absorption. Typically, the overlap of these spectral bands is very high
+for these two process, which causes phosphorescence to struggle in
+achieving electrically pumped lasing [@RN4]. A material would need to
+not only exhibit strong spin-orbit coupling to enable phosphorescence,
+but also to have the emission spectrum shifted from the triplet
+absorption spectrum [@RN4]. Jenekhe *et al.* [@RN77] attempted a
+Ir(ppy)3 phosphorescent emitter and Schols [@RN76] attempted a
+Btp2Ir(acac) phosphorescent emitter to observe Amplified Spontaneous
+Emission (ASE). Both were met with nothing promising.
+
+### Is triplet-triplet upconversion the way forward?
+
+TTA molecules display efficient blue emission, minimal EQE roll off,
+lower operation voltage, and low processing cost
+[@RN114; @RN115; @RN116; @RN117; @RN118; @RN119]. Typical OLEDs express
+a EQE roll off due to losses such as STA, SPA, and loss of charge
+carrier balance [@RN120], yet in a TTU-based OLED, TTA upconversion
+counteracts these processes. Molecules that exhibit efficient TTA
+upconversion must have these requirements
+
+1.  Singlet energy level lower than two triplet states
+    ($S_n \leq 2 \times T_1$)
+
+2.  Long triplet lifetime
+
+3.  TTA that cannot access the second triplet excited-state $T_2$
+
+The molecules that meet these requirements come under the polycyclic
+aromatic hydrocarbon acenes, such as antrhracene, tetracene, rubrene,
+and their derivatives [@RN21; @RN121; @RN122; @RN123; @RN124; @RN125].
+An efficient aluminium complex ($Almq_3$) doped with coumarin6 OLED had
+an EQE of $7.1\%$ [@RN126] -- the first device to surpass the
+fluorescent limit by using TTU.
+
+#### TTU as host
+
+Molecules that exhibit TTU generally suffer from low PLQY because of
+aggregation induced quenching or excimer formation [@RN21]. Thus these
+materials can be used in OLEDs as a host to produce efficient devices
+that emit at the guest's wavelength [@RN106; @RN127; @RN128; @RN129].
+The excitons are formed directly on the host and then the singlets (both
+direct and TTU singlets) are transferred via FRET to the guest for
+emission. It is necessary that the overlap of anthracene units between
+neighbouring molecules are reduced [@RN130].
+
+#### TTU as guest
+
+Not only can TTU be used a host, but it can be used as a guest to
+improve the EQE of a non-doped device. Many devices with high EQEs
+(\>10%) have been fabricated with TTU as a guest
+[@RN128; @RN131; @RN133; @RN134]. There have also been devices with TTU
+as both the host and guest [@RN135; @RN136].
+
+#### Neat film TTU
+
+In an attempt to simplify the device structure and fabrication process,
+while avoiding parasitic energy loss [@RN21], non-doped TTU devices have
+also been fabricated [@RN137; @RN138]. They have seen high EQEs, some of
+the highest in non-doped devices ($10\%$) [@RN139].
+
+#### TTU in Lasers
+
+Triplet-Triplet annihilation upconversion has not seen extensive
+development when it comes to organic lasers [@RN145]. The ultrafast
+lifetime of upconversion provides more excitement for the realisation of
+lasers than TADF molecules that display slow RISC lifetimes. So it is
+likely the limited $62.5_max$ IQE present in TTU devices that has
+shunned away researchers. This thesis aims to demonstrate the promise of
+using TTU as a mechanism to manage the triplet excitons for the purpose
+of electrically pumped lasers.
+
+#### TTU in this thesis
+
+This thesis considers first neat film molecule with the aim in showing
+that it has triplet-triplet annihilation upconversion. To analyse the requirement that TTU needs close
+range DET transfers to efficiently perform, the TTU material is doped in
+a large weight percentage as a guest in a host. This separates the TTU
+chromophores, resulting in limited DET transfer and subsequently
+lowering the TTU rate. Hence it will show the molecule's dependence on
+nearby neighbouring chromophores. Then the TTU molecule will be doped as the host into
+a lasing material to improve the PLQY of the device and show TTU
+enhanced devices can be possible. Even though doping affects the charge
+mobilities of the system [@RN140], the increased PLQY should see
+positive results.

@@ -1,0 +1,156 @@
+#  TTU in a Host-Guest system to enhance Coumarin6 {#sec-c6}
+
+## Introduction
+
+In this section, I preliminary investigated the electroluminescence
+properties of a model anthracene derivative 2,6-diphenylanthracene
+(2,6-DPA) [@RN39; @RN141] doped in a known lasing material,
+3-(2-Benzothiazolyl)-N,N-diethylumbelliferylamine (Coumarin6)
+[@RN35; @RN126] at $~1-2wt\%$. Coumarin caan be confied between the
+large singlet-triplet energy level gap of 2,6-DPA, which enables
+transfer of singlets to the guest, and triplets from the guest to host
+for further TTU (see Figure [@fig:ttucoumarin]). The OLED structure can
+be found in Appendix
+[\[apen:oledex\]](#apen:oledex){reference-type="ref"
+reference="apen:oledex"}. 2,6-DPA/Coumarin6 was based in OLEDs that were
+then tested and analysed under steady state and microsecond pulse
+excitation. The low $wt\%$ of Coumarin6 guest is to avoid separation of
+the chromophores of 2,6-DPA. That way the Dexter energy transfer of
+triplet-triplet annihilation can happen frequently. A similar doping
+approach has been used to obtain high EQEs due to TTU [@RN73], and
+reduce STA in optically pumped lasers [@RN149]. Herein, I found that
+2,6-DPA/Coumarin6 host/guest exhibits the TTU mechanism to generate
+extra singlet excitons, yet does not achieve a better performance than
+non-doped. At low-current densities (J) the EQE of the device increases
+proportionally to $J$ because of the absence of dominating
+singlet-triplet annihilation (STA). At high current densities, STA
+becomes a significant loss causing a reduction in EQE and gain. The
+transition between the dominating regions of
+$T{transition}\>(k_{TTU}\tau)^-1$ and the inverse are clearly visible,
+yet the transient electroluminescence does not demonstrate promising
+results. Herein, I will explain the promise of these preliminary results
+regarding TTU and coumarin6.
+
+![The triplet-triplet annihilation upconversion process in 2,6-DPA/Coumarin6 host-guest system. The singlet <span class="math inline"><em>S</em><sub>1</sub></span> and triplet <span class="math inline"><em>T</em><sub>1</sub></span> energy levels are shown, where <span class="math inline"><em>S</em><sub>1</sub> &lt; 2<em>T</em><sub>1</sub></span> for 2,6-DPA.](images/coumarinTTU.pdf){#fig-ttucoumarin}
+
+
+### Results
+
+The OLED devices that were creates followed the structure, Indium Tin
+Oxide (ITO) 100nm /
+N,N'-Di(1-naphthyl)-N,N'-diphenyl-(1,1'-biphenyl)-4,4'-diamine (NPB)
+40nm / 2,6-DPA and Coumarin6 ( 1-2wt%) 40nm /
+1,3,5-Tris(3-pyridyl-3-phenyl)benzene (TmPyPB) 30nm / Calcium 5nm /
+Aluminum 100nm. Each layer was thermally evaporated under high vacuum
+($10^-6 mbar)$ without break to avoid atmosphere exposure. The
+deposition rate for the organic layers were between $0.3 - 0.6 Å/s$.
+To achieve $~1-2wt\%$ , a simultaneous doping of coumarin6 and 2,6-DPA
+deposition with rates $0.01Å/s$ and $1Å/s$ minimum was required.
+The thermal evaporator's smallest deposition rate was $0.01Å/s$ so
+this become quite troublesome to manage. Exceeding $1Å/s$ is not
+preferable due to piercing of the beneath layer. The thickness and
+structure was chosen as per the OLEDs made in the previous section to best compare device performance difference.
+The spectra showed a pale green emission (peak 520 nm).
+
+::: {#fig-cstuff layout-ncol=2}
+
+![](images/coumarinspectra.pdf){#fig-cspectra}
+
+![](images/CoumarinJVL.pdf){#fig-cjvl}
+
+![](images/coumarinEQE.pdf){#fig-ceqe}
+
+![](images/Coumarinslope.pdf){#fig-cslope}
+
+
+Figure (a) Electroluminescence spectra of neat film 2,6-DPA compared to it doped in <span class="math inline">1<em>w</em><em>t</em>%</span> Coumarin6 (b) Current density-luminance-voltage (J-V-L) graph of 2,6-DPA/Coumarin6 neat films (b) EQE versus current density graph of doped films (d) Luminance versus current density graph showing the two regimes of TTU-dominant and STA-dominant
+
+:::
+
+Four neat film devices were fabricated each having eight pixels (four
+$0.75mm^2$ and four $0.3mm^2$). Due to faulty contacts, thermal
+evaporation alignment issues, and scratches or blemishes on the
+substrate window some pixels become unable to be tested. Others can
+degrade whilst a voltage is applied. In these doped-OLEDs, a majority
+were unstable due to fabrication issues. A few pixels managed to
+survive. A turn-on voltage of $3.6\pm0.2$ V was achieved at the defined
+$1 cd/m^2$, with the maximum brightness approaching $2300\pm1000 cd/m^2$
+at $10\pm0.2$ V. The large uncertainty for maximum brightness is too
+account for minimal pixel survival rate. The J-V-L characteristics of
+the doped film and the EQE versus current density graph can be found in
+@fig-cjvl and @fig-ceqe. A roll up of EQE
+(peak $0.16\pm0.10$%) until $~500\pm200 mA/cm^2$ demonstrates early
+triplet-triplet upconversion gain (see @fig-ceqe). The peak EQE of
+this device, however, do not exceed the theoretical maximum EQE of
+$~2.25\%$. It also is noticeably lower than 2,6-DPA neat film. This
+could be due to failure to achieve $1-2wt\%$ because of limitations with
+the thermal evaporator. It could also be device structure that might not
+present good injection of charges. The doped film exhibits similar
+luminance-current density trends with its distinct two-regimes of slope
+$>1$ and $<1$ (see @fig-cslope). The transition current density is roughly
+$900\pm100 mA/cm^2$. The slope is $<2$ due to imperfect TTU and losses,
+such as STA and other quenching. An observed slope shift from $>1$ to
+$<1$ indicates definite gain of triplet to singlet excitons.
+
+Pulse measurements (transient electroluminescence) will demonstrate the
+population dynamics of the excitons even to high current densities. The
+device area used was $0.7mm^2$ to reduce geometrical capacitance that
+minimises RC response distortion. For doped films, a long pulse width
+($1.5\mu s$) was used to extrapolate the affect STA had on fluorescent
+materials at high current densities. Whilst DC measurements only reached
+current densities of $1 A/cm^2$, pulse measurements reach densities of
+$>2.5 A/cm^2$. At high current densities, doped and non-doped devices
+show a sharp rise, characteristic of space charge limited current
+conditions), with the initial rise lifetime of $~80 ns$. This is
+characteristic of TTU devices because of the recycling nature of the
+triplet excitons generating additional singlets. At high current
+densities (40 V) the steady state shows decrease over time, indicating
+STA has dominated rate over the TTU generation rate (see @fig-cslope). This decrease is
+more than the neat-film, indicating that TTU either is not as present or
+STA is more dominant. At lower current densities, STA is not prevalent
+so a steady state is visible. STA dominates via FRET, a process that is
+determined by the spectral overlap between $S_1$ emission and
+$T_1\rightarrow T_n$ absorption bands.
+
+::: {#fig-cslope layout="[[1,1], [1]]"}
+
+![](images/coumarinPULSE.pdf){#fig-cpulsed}
+
+![](images/coumarinfitslope.pdf){#fig-cfitslope}
+
+![](images/coumarinslopedata.pdf){#fig-cslopedata}
+
+
+Figure (a) Transient EL spectra of doped 2,6-DPA with Coumarin6 with a 1500 ns pulse width for many voltages. (b) Log-log plot of the delayed fluorescence showing a slope of  2 matching TTU contribution (c) percentage fall from steady state to delayed fluorescence
+
+:::
+
+
+The turn off electroluminescence of pulse measurements also provide
+useful information. For TTU devices, a prompt decay is expected after
+voltage turn off due to the loss of direct singlet generation, followed
+by a delayed fluorescence (DF) bimolecular decay function
+$$EL_{DF} = \frac{1}{(a+bt)^2}$$ where $a$ and $b$ are constants. This
+characteristic slope of $~2$ in a log-log plot can be observed in these
+doped devices at low current density. The delayed component is $~61\%$
+of the steady state (near TTU max) at $15V$.
+
+### Discussion
+
+2,6-DPA is an anthracene derivative with low PLQY and moderate charge
+mobility in amorphous state. It can be doped with a higher PLQY material
+to improve the overall efficiency. In neat film OLEDs, 2,6-DPA shows
+distinctive TTU properties such as distinctive regimes as seen in
+the mCBP OLEDs. This chapter uses the TTU property of 2,6-DPA
+to transfer singlets to Coumarin6 via FRET (see @fig-ttucoumarin). A low $wt\%$ Coumarin6 was doped as to
+not separate the chromophores of 2,6-DPA, such that it would not extend
+the triplet states beyond the short-range Dexter energy transfer
+process. This was successful as the doped OLED showed trends of TTU.
+Despite the peak EQE not surpassing the theoretical maximum of typical
+fluorescent emitters -- a feat that would confirm extra exciton
+generation -- the evidence presented here is a good start in showing
+this doped system exhibits TTU. To increase device performance,
+optimisation of fabrication process and device structure needs to be
+considered specific to an a 2,6-DPA/Coumarin6 host-guest systems.
+Further optimisation of the thermal evaporation process would also
+increase the pixel survivability and stability.

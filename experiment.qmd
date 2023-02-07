@@ -1,0 +1,155 @@
+# []{#sec:exp label="sec:exp"} Experimental Method and Materials
+
+This chapter will describe the methodology of device fabrication and the
+materials used. Fabrication of organic light emitting diodes were the
+principle experiment. So this chapter will include the steps of
+fabrication, along with the analysis and testing of said devices. The
+number of devices tests, and number of measurements, along with
+uncertainty will be spoken about in their respective chapters.
+
+## Materials
+
+The organic semiconductor materials that were used in this thesis were
+primarily small molecular organic semiconductors. All of these layers were thermally
+evaporated under vacuum.
+
+## OLED Fabrication
+
+All fabrication was conducted within the Class 1000 clean room at the
+Centre of Organic Photonics and Electronics (COPE) at The University of
+Queensland. The Queensland Node of the Australian National Fabrication
+Faacility (ANFF) maintained and established some of the procedures and
+equipment that was also needed to complete fabrication. All OLEDs in
+this thesis were fabricated using thermal evaporation
+
+### Cleaning substrates
+
+To begin, OLEDs need to have transparent window to view the light from.
+A pre-patterned indium tin oxide (ITO) layer on a 100 nm thick glass
+substrate was used as the window. They were sourced from Xin Yan
+Technology and require cleaning before deposition of organic layers to
+improve charge injection into the emissive layer. The cleaning process
+follows these sequential steps.
+
+1.  Sonicate substrates in dionised (DI) water with detergent (Alconox)
+    for 5 minutees
+
+2.  Heat substrates at 150 $\degree C$ for 15 minutes in same DI water
+    with Alconox
+
+3.  Sonicate substrates in DI water for 5 minutes
+
+4.  Sonicate substrates in Acetone for 5 minutes
+
+5.  Sonicate substrates in Isoproponaol for 5 minutes
+
+6.  Blow dried with high pressure nitrogen gun
+
+7.  UV-Ozone treatment for 45 minutes
+
+The culmination of the cleaning with UV-Ozone is to remove the organic
+impurities and improve the wetibility of the substrates.
+
+### Layer Deposition
+
+The hole transport layer is the first layer to be deposited onto the
+clean substrate. Followed by the emissive layer. In the case of
+host/guest systems, the emissive layer involved simultaneous thermal
+deposition. The electron transport layer is deposited next. Finally
+capped off with the cathode deposition. To obtain the desired area of
+emission, a laser cut steel stencil was placed over the devices. There
+are a few sizes of the active areas (pixels), but in this report
+$0.3 mm^2$, $0.75 mm^2$, and $4 mm^2$ were used.
+
+### Thermal Evaporation
+
+The thermal evaporation equipment (MBraun Inert-gas Systeme, Gmbh) could
+reach a vacuum of $~10^{-6} mbar$, which enabled for organic materials
+to be heated (evaporated) onto the pre-cleaned substrates. To heat the
+organic materials a voltage was passed to the aluminium oxide crucibles
+(1 & 2) that contained the powered form of the material (see @fig-evap). Inorganic
+materials (Calcium and Aluminium) were deposited in different holders (5
+& 6). Two Quartz Crystal Monitors (QCM, 8 & 9) measured the rate of
+deposition, which enabled calculation of deposition thickness. In order
+to deposit the layers uniformly, not only were the substrates put in a
+rotatable holder (11) that could close off deposition (10) if need be,
+but a specified calibration factor for each material was used to predict
+consistent deposition. The evaporation rates were kept between $0.1-1$
+Å/s to avoid piercing the layer beneath. Additional covers (3, 4 & 7)
+were used as safety in case of sudden increase of deposition rate.
+Previous experiments have provided accuracy of the QCM-measured
+thickness by using a Dektak XT profilometer (Bruker) to scratch the film
+and measure the step distance between the top surface of the film and
+substrate.
+
+![Schematic representation of the vacuum thermal evaporation chamber used to deposit thin films. Aluminium and calcium sit upon metal holders that have a current passed through it to heat it up (5 & 6). See text for more details.](images/ThermalEvap.pdf){#fig-evap}
+
+
+### DC Measurements
+
+Two separate apparatuses were used to measure DC measurements of the
+OLEDs, depending on the size of heir emission area. For $4mm^2$ areas,
+the devices were placed within an integrating sphere (Hamamatsu
+Photonics C9920-12) coupled with a Keithley 2400 source meter. The
+Electroluminescence spectra was recorded using a fibre coupled PMA-12
+Photonic multi-channel analyser. These measurements were performed in a
+nitrogen-filled glove-box with low $O_2$ and moisture content.
+
+The small area devices ($0.75mm^2$ and $0.3mm^2$) needed to be
+encapsulated so that they could be transported to the transient response
+apparatus. These OLEDs were tested with a pre-calibrated photomultiplier
+tube (PMT, Hamamatsu H10721-20) coupled with a Keithley 2400 source
+meter. The electroluminescence spectra was measured with a CCD
+spectrometer (Thor labs, CCS100). A LabVIEW program could collate the
+voltage, current, luminance, and spectra to calculate the external
+quantum efficiency (EQE).
+
+The PMT first needed to be calibrated to convert photocurrent into
+luminance. This was done by setting the distance between the PMT and
+device to a fixed value for a given emissive pixel area A. To verify the
+calibration it is possible to use a luminance meter (Konica Minolta
+LS100). The calibration factor scales the relationship between
+photocurrent and pixel area A to give luminance L.
+
+Total luminance L output is not the same brightness that the human eye
+sees because of how the eye responds to different wavelengths. The total
+power of the emitted signal the human recognises is given by
+$$Power = \frac{\phi_{lum}}{683}\times \frac{\int EL(\lambda)d\lambda}{\int ER(\lambda)\times EL(\lambda)d\lambda}$$
+where $\phi_{lum} = \pi\times L \times A$, $EL(\lambda)$ is the
+normalised distribution of the electroluminescence signal, $ER(\lambda)$
+is the eye response function, and the $683 lm/W$ constant is the flux at
+the peak wavelength of 555nm of $ER(\lambda)$. This power can then be
+used to calculate the number of photons ($n_p$) emitted by the device
+using
+$$n_p = \frac{\int EL(\lambda)\lambda d\lambda}{\int ER(\lambda)\times EL(\lambda)d\lambda} \times \frac{1}{hc} \times Power$$
+where $h$ and $c$ are Planck's constant and the speed of light
+respectively. Comparing this to the current $I=e\times n_e$, a ratio of
+number of electrons $n_e$ injected to total number of photons out $n_e$
+provides us with the definition of external quantum efficiency (EQE).
+Refer to @fig-perfo to see the J-V-L characteristics of a test OLED
+with Super Yellow as the emissive layer.
+
+
+![Normalised eye response curve as per the CIE 1931 standard in relation to the emission spectra of DPA/Coumarin6 host/guest system that can be found in the final section.](images/EyeResponse.pdf){#fig-eye}
+
+### Pulse Measurements
+
+![Schematic diagram of high voltage pulse measurement apparatus. Reduction of signal reflection was achieved by using 50 <span class="math inline"><em>Ω</em></span> resistance cables and terminating the instruments at the same resistance.](images/Pulse.pdf){#fig-pulse}
+
+Lasing required pulse measurements due to the need to inject high
+current densities without massive losses, such as Joule heating and
+avoid long triplet exciton times. So testing the OLED devices under a
+pulse regime is necessary to elucidate the transient behaviour. Pulse
+widths range from nanosecond to microsecond lifetime to observe the
+non-linear processes such as charge transport, exciton formation, and
+exciton annihilation processes (TTA).
+
+To output voltage pulses, high-speed electrical pulse generators
+(AV-1011B1-B) and AVTECH AVRK-3-B) were utilised to deliver pulses with
+maximum 500 V, 3-6 ns rise and fall times, and 1 kHz operational
+frequency (see @fig-pulse). The current was measured using a ultra fast
+current probe (Integrated Sensor Technology, 711 UHF) that fed, as well
+as the electroluminescence response (PMT), into a digital oscilloscope
+(Teledyne LeCroy) with resolution of 2 GHz. The cables connecting each
+equipment piece had resistance of $50 \Omega$ and placed without bends
+to reduce wave-guided losses and current reflections.

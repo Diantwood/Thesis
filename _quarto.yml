@@ -1,0 +1,51 @@
+project:
+  type: book
+
+book:
+  title: "On the Path to Electrically Pumped Organic Lasers"
+  author:
+    - name: Alexander Dian
+      url: https://diantwood.github.io
+      affiliation: The University of Queensland
+  date: "2023-01-31"
+  search: true
+  repo-url: https://github.com/diantwood/thesis
+  repo-actions: [edit]
+  downloads: [pdf, epub]
+  sharing: [twitter, facebook]
+
+  chapters:
+    - index.qmd
+    - acknowledge.qmd
+    - intro.qmd
+    - litreview.qmd
+    - experiment.qmd
+    - DPA.qmd
+    - coumarin6.qmd
+    - conclusion.qmd
+    - references.qmd
+  appendices:
+    - appen.qmd
+
+bibliography: references.bib
+
+execute:
+  freeze: auto 
+website:
+  twitter-card: true
+# bibliography: references.bib
+pdf-engine: pdflatex
+# cite-method: biblatex
+# biblatexoptions: citestyle=numeric
+format:
+  html:
+    toc-location: right
+    toc-title: "On this page:"
+    code-copy: true
+    theme: lux
+  pdf:
+    documentclass: scrreprt
+comments:
+  hypothesis: true
+
+
